@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:background="@drawable/backgroundgradient">
+
+    <!-- Accounts Handling Text -->
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/accounts_handling"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageHandleAccount"
+        android:layout_width="295dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/handle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView19" />
+
+    <!-- Register Client Button -->
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="227dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#15000000"
+        android:onClick="RegisterClient"
+        android:text="@string/register_client"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageHandleAccount"
+        tools:ignore="TextContrastCheck" />
+
+    <!-- Update/Delete Client Button -->
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="223dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="297dp"
+        android:backgroundTint="#15000000"
+        android:onClick="UpdateDeleteClient"
+        android:text="@string/update_delete_client"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button7"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
